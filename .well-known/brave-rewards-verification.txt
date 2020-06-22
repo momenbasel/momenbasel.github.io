@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: momenbasel.github.io
+Token: eb1ba3ec6ed9a8079adf2fa0746ca03bbc1b9ec9fbdddbe4c4217cad273d8951
