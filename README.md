@@ -7,9 +7,9 @@ This site is meant to be a collection of posts about CyberSecurity, my personal 
 As it's not a blog, it's impossible to comment, but if you have anything that you want to tell, suggesting imporvements, fix errors, and similar things, drop me a mail on momenbasel@protonmail.com
 
 ### Current sections
-* 
-* 
-* 
+* [writeups](https://momenbasel.github.io/writeups/)
+* [HTB reviews](https://momenbasel.github.io/htb/)
+* [Miscellaneous](https://momenbasel.github.io/misc/)
 
 
 
