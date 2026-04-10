@@ -50,8 +50,8 @@
     }
 
     ::selection {
-      background: #252528;
-      color: var(--text-bright);
+      background: var(--warm);
+      color: #0e0e10;
     }
 
     a {
@@ -116,10 +116,13 @@
       margin-bottom: 1.5rem;
     }
     .intro-bio {
-      font-size: 13px;
-      line-height: 1.85;
-      max-width: 480px;
+      font-size: 11px;
+      line-height: 2;
+      max-width: 440px;
       margin-bottom: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #777;
     }
     .intro-links {
       display: flex;
@@ -128,14 +131,15 @@
     }
     .intro-links a {
       font-size: 12px;
-      color: var(--text-dim);
+      color: var(--text);
       letter-spacing: 0.02em;
-      border-bottom: 1px solid var(--rule);
-      padding-bottom: 1px;
+      text-decoration: underline;
+      text-decoration-color: var(--rule);
+      text-underline-offset: 4px;
     }
     .intro-links a:hover {
-      color: var(--text);
-      border-color: var(--text-dim);
+      color: var(--warm);
+      text-decoration-color: var(--warm);
     }
 
     /* ---- Sections ---- */
@@ -146,16 +150,16 @@
     .section-label {
       font-size: 10px;
       font-weight: 500;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.3em;
       text-transform: uppercase;
-      color: var(--text-dim);
-      margin-bottom: 2rem;
+      color: var(--warm);
+      margin-bottom: 2.5rem;
     }
 
     /* ---- Project list ---- */
     .p-item {
       display: block;
-      margin-bottom: 1.75rem;
+      margin-bottom: 2.25rem;
     }
     .p-item:last-child { margin-bottom: 0; }
 
@@ -180,7 +184,9 @@
       height: 1em;
       margin: 0 10px;
       border-bottom: 1px dotted var(--text-gone);
+      transition: border-color 0.12s ease;
     }
+    .p-item:hover .p-dots { border-color: #3a3a3e; }
     .p-lang {
       font-size: 11px;
       color: var(--text-dim);
@@ -216,13 +222,15 @@
       white-space: nowrap;
       transition: color 0.12s ease;
     }
-    .w-item:hover .w-title { color: #fff; }
+    .w-item:hover .w-title { color: var(--warm); }
     .w-dots {
       flex: 1;
       height: 1em;
       margin: 0 10px;
       border-bottom: 1px dotted var(--text-gone);
+      transition: border-color 0.12s ease;
     }
+    .w-item:hover .w-dots { border-color: var(--warm); }
     .w-where {
       font-size: 11px;
       color: var(--text-dim);
@@ -285,10 +293,9 @@
     <img class="intro-avatar" src="https://avatars.githubusercontent.com/u/8724766?v=4" alt="">
     <h1>Moamen Basel</h1>
     <p class="intro-bio">
-      Security engineer building open-source tools for offensive security
-      and automation. I spend most of my time breaking things, writing
-      code to break things faster, and occasionally shipping software
-      that has nothing to do with breaking things.
+      Security engineer specializing in offensive security,
+      vulnerability research, and automation. Building
+      open-source tools to dissect digital architecture.
     </p>
     <div class="intro-links">
       <a href="https://github.com/momenbasel">github</a>
