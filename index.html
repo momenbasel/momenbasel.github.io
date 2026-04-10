@@ -9,7 +9,7 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://momenbasel.github.io/">
   <meta property="og:title" content="Moamen Basel">
-  <meta property="og:description" content="Security engineer and open-source developer.">
+  <meta property="og:description" content="Security engineer. Open-source tools for offensive security and automation.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://momenbasel.github.io/">
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/8724766?v=4">
@@ -18,217 +18,254 @@
   <meta name="twitter:title" content="Moamen Basel">
   <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/8724766?v=4">
   <link rel="icon" href="https://avatars.githubusercontent.com/u/8724766?v=4&s=32">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"Moamen Basel","url":"https://momenbasel.github.io","sameAs":["https://github.com/momenbasel","https://x.com/momenbassel","https://www.linkedin.com/in/momenbasel/","https://medium.com/@momenbasel"],"jobTitle":"Security Engineer"}
-  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Moamen Basel","url":"https://momenbasel.github.io","sameAs":["https://github.com/momenbasel","https://x.com/momenbassel","https://www.linkedin.com/in/momenbasel/","https://medium.com/@momenbasel"],"jobTitle":"Security Engineer"}</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+    :root {
+      --bg: #0e0e10;
+      --surface: #141416;
+      --rule: #1c1c1f;
+      --rule-faint: #161618;
+      --text: #999;
+      --text-bright: #d4d4d4;
+      --text-dim: #555;
+      --text-gone: #2a2a2d;
+      --warm: #a08555;
+    }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #0c0c0d;
-      color: #b4b4b4;
-      line-height: 1.7;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
-    ::selection { background: #2a2a2e; }
-
-    a { color: #d4d4d4; text-decoration: none; }
-    a:hover { color: #fff; }
-
-    .mono {
-      font-family: 'JetBrains Mono', monospace;
+    ::selection {
+      background: #252528;
+      color: var(--text-bright);
     }
 
-    /* Page */
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.12s ease;
+    }
+
     .page {
-      max-width: 680px;
+      max-width: 660px;
       margin: 0 auto;
-      padding: 0 1.5rem;
+      padding: 0 2rem;
     }
 
-    /* Nav */
+    /* ---- Header ---- */
     header {
-      padding: 3rem 0 0;
-      margin-bottom: 4rem;
+      padding: 2.5rem 0;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
     }
-    header .name {
-      font-weight: 600;
-      font-size: 0.9rem;
-      color: #e4e4e4;
+    .h-name {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-dim);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-    header nav {
+    .h-nav {
+      display: flex;
+      gap: 1.75rem;
+    }
+    .h-nav a {
+      font-size: 12px;
+      color: var(--text-dim);
+      letter-spacing: 0.03em;
+    }
+    .h-nav a:hover {
+      color: var(--text);
+    }
+
+    /* ---- Intro ---- */
+    .intro {
+      padding: 3rem 0 4.5rem;
+    }
+    .intro-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+      filter: grayscale(0.2);
+    }
+    .intro h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 3.2rem;
+      color: var(--text-bright);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+    .intro-bio {
+      font-size: 13px;
+      line-height: 1.85;
+      max-width: 480px;
+      margin-bottom: 2rem;
+    }
+    .intro-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .intro-links a {
+      font-size: 12px;
+      color: var(--text-dim);
+      letter-spacing: 0.02em;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1px;
+    }
+    .intro-links a:hover {
+      color: var(--text);
+      border-color: var(--text-dim);
+    }
+
+    /* ---- Sections ---- */
+    .section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--rule);
+    }
+    .section-label {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 2rem;
+    }
+
+    /* ---- Project list ---- */
+    .p-item {
+      display: block;
+      margin-bottom: 1.75rem;
+    }
+    .p-item:last-child { margin-bottom: 0; }
+
+    .p-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0;
+      margin-bottom: 0.25rem;
+    }
+    .p-name {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-bright);
+      white-space: nowrap;
+      transition: color 0.12s ease;
+    }
+    .p-item:hover .p-name {
+      color: #fff;
+    }
+    .p-dots {
+      flex: 1;
+      height: 1em;
+      margin: 0 10px;
+      border-bottom: 1px dotted var(--text-gone);
+    }
+    .p-lang {
+      font-size: 11px;
+      color: var(--text-dim);
+      white-space: nowrap;
+      margin-right: 14px;
+    }
+    .p-stars {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--warm);
+      min-width: 28px;
+      text-align: right;
+      white-space: nowrap;
+    }
+    .p-desc {
+      font-size: 12px;
+      color: var(--text-dim);
+      line-height: 1.7;
+      padding-left: 0;
+      max-width: 440px;
+    }
+
+    /* ---- Writing list ---- */
+    .w-item {
+      display: flex;
+      align-items: baseline;
+      gap: 0;
+      padding: 0.6rem 0;
+    }
+    .w-title {
+      font-size: 13px;
+      color: var(--text-bright);
+      white-space: nowrap;
+      transition: color 0.12s ease;
+    }
+    .w-item:hover .w-title { color: #fff; }
+    .w-dots {
+      flex: 1;
+      height: 1em;
+      margin: 0 10px;
+      border-bottom: 1px dotted var(--text-gone);
+    }
+    .w-where {
+      font-size: 11px;
+      color: var(--text-dim);
+      white-space: nowrap;
+    }
+
+    /* ---- Footer ---- */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 2rem 0 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    .f-left {
+      font-size: 11px;
+      color: var(--text-gone);
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 14px;
+    }
+    .f-links {
       display: flex;
       gap: 1.5rem;
     }
-    header nav a {
-      font-size: 0.82rem;
-      color: #666;
-      transition: color 0.15s;
+    .f-links a {
+      font-size: 11px;
+      color: var(--text-dim);
     }
-    header nav a:hover { color: #aaa; }
+    .f-links a:hover { color: var(--text); }
 
-    /* Intro */
-    .intro {
-      margin-bottom: 5rem;
-    }
-    .intro .avatar {
-      width: 72px;
-      height: 72px;
-      border-radius: 50%;
-      margin-bottom: 1.5rem;
-      border: 1px solid #1e1e20;
-    }
-    .intro h1 {
-      font-size: 1.6rem;
-      font-weight: 600;
-      color: #e8e8e8;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.75rem;
-    }
-    .intro .bio {
-      font-size: 0.95rem;
-      line-height: 1.8;
-      max-width: 520px;
-      margin-bottom: 1.5rem;
-    }
-    .intro .links {
-      display: flex;
-      gap: 1.25rem;
-      flex-wrap: wrap;
-    }
-    .intro .links a {
-      font-size: 0.82rem;
-      color: #666;
-      transition: color 0.15s;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-    }
-    .intro .links a:hover { color: #b4b4b4; }
-    .intro .links a svg { opacity: 0.5; }
-    .intro .links a:hover svg { opacity: 0.8; }
-
-    /* Sections */
-    section {
-      margin-bottom: 4.5rem;
-    }
-    section h2 {
-      font-size: 0.75rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #555;
-      margin-bottom: 1.5rem;
-    }
-
-    /* Projects */
-    .project {
-      display: block;
-      padding: 1rem 0;
-      border-top: 1px solid #161618;
-      transition: background 0.1s;
-    }
-    .project:last-child {
-      border-bottom: 1px solid #161618;
-    }
-    .project-row {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 1rem;
-      margin-bottom: 0.3rem;
-    }
-    .project-name {
-      font-weight: 600;
-      font-size: 0.92rem;
-      color: #d4d4d4;
-      transition: color 0.15s;
-    }
-    .project:hover .project-name { color: #fff; }
-    .project-meta {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      flex-shrink: 0;
-    }
-    .project-lang {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.68rem;
-      color: #555;
-    }
-    .project-stars {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.75rem;
-      color: #555;
-      min-width: 36px;
-      text-align: right;
-    }
-    .project-desc {
-      font-size: 0.84rem;
-      color: #666;
-      line-height: 1.6;
-    }
-
-    /* Writing */
-    .writing-item {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      padding: 0.75rem 0;
-      border-top: 1px solid #161618;
-      gap: 1rem;
-    }
-    .writing-item:last-child {
-      border-bottom: 1px solid #161618;
-    }
-    .writing-title {
-      font-size: 0.9rem;
-      color: #d4d4d4;
-      transition: color 0.15s;
-    }
-    .writing-item:hover .writing-title { color: #fff; }
-    .writing-where {
-      font-size: 0.75rem;
-      color: #444;
-      flex-shrink: 0;
-      font-family: 'JetBrains Mono', monospace;
-    }
-
-    /* Footer */
-    footer {
-      padding: 3rem 0;
-      border-top: 1px solid #161618;
-      margin-top: 2rem;
-      font-size: 0.78rem;
-      color: #444;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    footer .flinks {
-      display: flex;
-      gap: 1.25rem;
-    }
-    footer a {
-      color: #444;
-      font-size: 0.78rem;
-    }
-    footer a:hover { color: #888; }
-
+    /* ---- Responsive ---- */
     @media (max-width: 600px) {
-      header { padding-top: 2rem; margin-bottom: 3rem; }
-      .intro { margin-bottom: 3.5rem; }
-      .intro h1 { font-size: 1.35rem; }
-      section { margin-bottom: 3.5rem; }
-      footer { flex-direction: column; gap: 0.75rem; align-items: flex-start; }
+      .page { padding: 0 1.25rem; }
+      .intro h1 { font-size: 2.4rem; }
+      .intro { padding: 2rem 0 3rem; }
+      .section { padding: 2rem 0; }
+      .p-desc { max-width: 100%; }
+      .p-dots, .w-dots { display: none; }
+      .p-row { flex-wrap: wrap; gap: 0.5rem; }
+      .p-lang { margin-right: 8px; }
+      footer { flex-direction: column; gap: 1rem; align-items: flex-start; }
     }
   </style>
 </head>
@@ -236,8 +273,8 @@
 <div class="page">
 
   <header>
-    <span class="name">moamen basel</span>
-    <nav>
+    <span class="h-name">Moamen Basel</span>
+    <nav class="h-nav">
       <a href="#projects">projects</a>
       <a href="#writing">writing</a>
       <a href="https://github.com/momenbasel">github</a>
@@ -245,146 +282,125 @@
   </header>
 
   <div class="intro">
-    <img class="avatar" src="https://avatars.githubusercontent.com/u/8724766?v=4" alt="Moamen Basel">
+    <img class="intro-avatar" src="https://avatars.githubusercontent.com/u/8724766?v=4" alt="">
     <h1>Moamen Basel</h1>
-    <p class="bio">
-      Security engineer building open-source tools for offensive security and automation.
-      I spend most of my time breaking things, writing code to break things faster,
-      and occasionally making software that has nothing to do with breaking things.
+    <p class="intro-bio">
+      Security engineer building open-source tools for offensive security
+      and automation. I spend most of my time breaking things, writing
+      code to break things faster, and occasionally shipping software
+      that has nothing to do with breaking things.
     </p>
-    <div class="links">
-      <a href="https://github.com/momenbasel">
-        <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-        GitHub
-      </a>
-      <a href="https://x.com/momenbassel">
-        <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        @momenbassel
-      </a>
-      <a href="https://www.linkedin.com/in/momenbasel/">
-        <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        LinkedIn
-      </a>
-      <a href="https://medium.com/@momenbasel">
-        <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
-        Blog
-      </a>
-      <a href="mailto:momenbasel@protonmail.com">
-        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        Email
-      </a>
+    <div class="intro-links">
+      <a href="https://github.com/momenbasel">github</a>
+      <a href="https://x.com/momenbassel">x.com</a>
+      <a href="https://www.linkedin.com/in/momenbasel/">linkedin</a>
+      <a href="https://medium.com/@momenbasel">medium</a>
+      <a href="mailto:momenbasel@protonmail.com">email</a>
     </div>
   </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
+  <section class="section" id="projects">
+    <div class="section-label">Projects</div>
 
-    <a href="https://momenbasel.github.io/keyFinder/" class="project">
-      <div class="project-row">
-        <span class="project-name">keyFinder</span>
-        <div class="project-meta">
-          <span class="project-lang">js</span>
-          <span class="project-stars">558</span>
-        </div>
+    <a href="https://momenbasel.github.io/keyFinder/" class="p-item">
+      <div class="p-row">
+        <span class="p-name">keyFinder</span>
+        <span class="p-dots"></span>
+        <span class="p-lang">javascript</span>
+        <span class="p-stars">558</span>
       </div>
-      <div class="project-desc">Chrome extension that passively finds leaked API keys, tokens, and secrets on every page you visit. 80+ patterns, zero config.</div>
+      <div class="p-desc">Chrome extension that passively scans every page for leaked API keys, tokens, and secrets. 80+ patterns, zero config.</div>
     </a>
 
-    <a href="https://github.com/momenbasel/PureMac" class="project">
-      <div class="project-row">
-        <span class="project-name">PureMac</span>
-        <div class="project-meta">
-          <span class="project-lang">swift</span>
-          <span class="project-stars">70</span>
-        </div>
+    <a href="https://github.com/momenbasel/PureMac" class="p-item">
+      <div class="p-row">
+        <span class="p-name">PureMac</span>
+        <span class="p-dots"></span>
+        <span class="p-lang">swift</span>
+        <span class="p-stars">70</span>
       </div>
-      <div class="project-desc">Free, open-source macOS cleaner. Native SwiftUI, zero telemetry. CleanMyMac alternative that respects your privacy.</div>
+      <div class="p-desc">Open-source macOS cleaner. Native SwiftUI, zero telemetry. The CleanMyMac alternative that respects your privacy.</div>
     </a>
 
-    <a href="https://github.com/momenbasel/subScreen" class="project">
-      <div class="project-row">
-        <span class="project-name">subScreen</span>
-        <div class="project-meta">
-          <span class="project-lang">js</span>
-          <span class="project-stars">13</span>
-        </div>
+    <a href="https://github.com/momenbasel/subScreen" class="p-item">
+      <div class="p-row">
+        <span class="p-name">subScreen</span>
+        <span class="p-dots"></span>
+        <span class="p-lang">javascript</span>
+        <span class="p-stars">13</span>
       </div>
-      <div class="project-desc">Bulk screenshot tool for web hosts. Point it at a list of subdomains and get visual recon in seconds.</div>
+      <div class="p-desc">Bulk screenshot tool for web hosts. Point it at a list of subdomains and get visual recon fast.</div>
     </a>
 
-    <a href="https://momenbasel.github.io/AutoWIFI/" class="project">
-      <div class="project-row">
-        <span class="project-name">AutoWIFI</span>
-        <div class="project-meta">
-          <span class="project-lang">python</span>
-          <span class="project-stars">9</span>
-        </div>
+    <a href="https://momenbasel.github.io/AutoWIFI/" class="p-item">
+      <div class="p-row">
+        <span class="p-name">AutoWIFI</span>
+        <span class="p-dots"></span>
+        <span class="p-lang">python</span>
+        <span class="p-stars">9</span>
       </div>
-      <div class="project-desc">Wireless pentesting framework. Automates the full WPA/WPA2/WEP/WPS attack chain from recon to cracking.</div>
+      <div class="p-desc">Wireless pentesting framework. Full WPA/WPA2/WEP/WPS attack chain from recon to cracking in one command.</div>
     </a>
 
-    <a href="https://momenbasel.github.io/FastRecvSMS/" class="project">
-      <div class="project-row">
-        <span class="project-name">FastRecvSMS</span>
-        <div class="project-meta">
-          <span class="project-lang">python</span>
-          <span class="project-stars">8</span>
-        </div>
+    <a href="https://momenbasel.github.io/FastRecvSMS/" class="p-item">
+      <div class="p-row">
+        <span class="p-name">FastRecvSMS</span>
+        <span class="p-dots"></span>
+        <span class="p-lang">python</span>
+        <span class="p-stars">8</span>
       </div>
-      <div class="project-desc">SMS verification CLI. Buy temporary numbers and receive OTP codes in one command across 170+ countries.</div>
+      <div class="p-desc">SMS verification CLI. Buy temporary numbers and receive OTP codes across 170+ countries.</div>
     </a>
 
-    <a href="https://github.com/marketplace/actions/vulnhawk-security-scan" class="project">
-      <div class="project-row">
-        <span class="project-name">VulnHawk</span>
-        <div class="project-meta">
-          <span class="project-lang">python</span>
-          <span class="project-stars">3</span>
-        </div>
+    <a href="https://github.com/marketplace/actions/vulnhawk-security-scan" class="p-item">
+      <div class="p-row">
+        <span class="p-name">VulnHawk</span>
+        <span class="p-dots"></span>
+        <span class="p-lang">python</span>
+        <span class="p-stars">3</span>
       </div>
-      <div class="project-desc">AI-powered SAST scanner that finds auth bypass, IDOR, and logic bugs that traditional tools miss. Ships as a GitHub Action.</div>
+      <div class="p-desc">AI-powered SAST scanner. Finds auth bypass, IDOR, and logic bugs that Semgrep and CodeQL miss.</div>
     </a>
 
-    <a href="https://momenbasel.github.io/htb-writeups/" class="project">
-      <div class="project-row">
-        <span class="project-name">htb-writeups</span>
-        <div class="project-meta">
-          <span class="project-lang">html</span>
-          <span class="project-stars">2</span>
-        </div>
+    <a href="https://momenbasel.github.io/htb-writeups/" class="p-item">
+      <div class="p-row">
+        <span class="p-name">htb-writeups</span>
+        <span class="p-dots"></span>
+        <span class="p-lang">html</span>
+        <span class="p-stars">2</span>
       </div>
-      <div class="project-desc">Hack The Box writeup collection. Walkthroughs for retired machines and challenges.</div>
+      <div class="p-desc">Hack The Box writeup collection. Walkthroughs for retired machines and challenges.</div>
     </a>
-
   </section>
 
-  <section id="writing">
-    <h2>Writing</h2>
+  <section class="section" id="writing">
+    <div class="section-label">Writing</div>
 
-    <a href="https://medium.com/@momenbasel/from-parameter-pollution-to-xss-d095e13be060" class="writing-item">
-      <span class="writing-title">From Parameter Pollution to XSS</span>
-      <span class="writing-where">medium</span>
+    <a href="https://medium.com/@momenbasel/from-parameter-pollution-to-xss-d095e13be060" class="w-item">
+      <span class="w-title">From Parameter Pollution to XSS</span>
+      <span class="w-dots"></span>
+      <span class="w-where">medium</span>
     </a>
 
-    <a href="https://momenbasel.github.io/htb-writeups/" class="writing-item">
-      <span class="writing-title">Hack The Box Machine Writeups</span>
-      <span class="writing-where">collection</span>
+    <a href="https://momenbasel.github.io/htb-writeups/" class="w-item">
+      <span class="w-title">Hack The Box Machine Writeups</span>
+      <span class="w-dots"></span>
+      <span class="w-where">collection</span>
     </a>
 
-    <a href="https://medium.com/@momenbasel" class="writing-item">
-      <span class="writing-title">All posts</span>
-      <span class="writing-where">medium</span>
+    <a href="https://medium.com/@momenbasel" class="w-item">
+      <span class="w-title">All posts</span>
+      <span class="w-dots"></span>
+      <span class="w-where">medium</span>
     </a>
-
   </section>
 
   <footer>
-    <span>Moamen Basel</span>
-    <div class="flinks">
+    <span class="f-left">Moamen Basel</span>
+    <div class="f-links">
       <a href="https://github.com/momenbasel">github</a>
       <a href="https://x.com/momenbassel">x</a>
       <a href="https://www.linkedin.com/in/momenbasel/">linkedin</a>
-      <a href="https://medium.com/@momenbasel">medium</a>
     </div>
   </footer>
 
