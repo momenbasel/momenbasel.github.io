@@ -1,986 +1,663 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MRQWMMQL');</script>
-  <!-- End Google Tag Manager -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZF15G4R65"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<meta charset="UTF-8" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MRQWMMQL');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZF15G4R65"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TZF15G4R65');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Moamen Basel — Security Engineer</title>
+<meta name="description" content="Security engineer and open-source developer. Building tools for offensive security, privacy, and automation." />
+<meta name="author" content="Moamen Basel" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<link rel="canonical" href="https://moamenbasel.com/" />
+<meta property="og:title" content="Moamen Basel" />
+<meta property="og:description" content="Security engineer. Open-source tools for offensive security and automation." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://moamenbasel.com/" />
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/8724766?v=4" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@momenbassel" />
+<meta name="twitter:title" content="Moamen Basel" />
+<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/8724766?v=4" />
+<link rel="icon" href="https://avatars.githubusercontent.com/u/8724766?v=4&s=32" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Moamen Basel","url":"https://moamenbasel.com","sameAs":["https://github.com/momenbasel","https://x.com/momenbassel","https://www.linkedin.com/in/momenbasel/","https://medium.com/@momenbasel"],"jobTitle":"Security Engineer","worksFor":{"@type":"Organization","name":"Grey Core Labs","url":"https://greycorelabs.com"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,200;0,300;1,200&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #000000;
+    --green: #00F48E;
+    --green-hi: #00FF3C;
+    --muted: #84898e;
+    --dim: #3a3f44;
+    --white: #ffffff;
+    --hairline: rgba(0, 244, 142, 0.14);
+    --mono: 'IBM Plex Mono', Menlo, monospace;
+    --serif: 'Cormorant', Georgia, serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 13px;
+    line-height: 1.7;
+    overflow-x: hidden;
+    cursor: none;
+  }
+  ::selection { background: var(--green); color: #000; }
+  a { color: inherit; text-decoration: none; }
 
-    gtag('config', 'G-TZF15G4R65');
-  </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moamen Basel — Security Engineer</title>
-  <meta name="description" content="Security engineer and open-source developer. Building tools for offensive security, privacy, and automation.">
-  <meta name="author" content="Moamen Basel">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0d0d0f">
-  <meta name="color-scheme" content="dark">
-  <link rel="canonical" href="https://moamenbasel.com/">
-  <meta property="og:title" content="Moamen Basel">
-  <meta property="og:description" content="Security engineer. Open-source tools for offensive security and automation.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://moamenbasel.com/">
-  <meta property="og:image" content="https://avatars.githubusercontent.com/u/8724766?v=4">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@momenbassel">
-  <meta name="twitter:title" content="Moamen Basel">
-  <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/8724766?v=4">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/8724766?v=4&s=32">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Moamen Basel","url":"https://moamenbasel.com","sameAs":["https://github.com/momenbasel","https://x.com/momenbassel","https://www.linkedin.com/in/momenbasel/","https://medium.com/@momenbasel"],"jobTitle":"Security Engineer","worksFor":{"@type":"Organization","name":"Grey Core Labs","url":"https://greycorelabs.com"}}</script>
+  /* ---------- CRT layer ---------- */
+  .crt::before {
+    content: ""; position: fixed; inset: 0; z-index: 90; pointer-events: none;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.22) 0 1px, transparent 1px 3px);
+    mix-blend-mode: multiply;
+  }
+  .crt::after {
+    content: ""; position: fixed; inset: 0; z-index: 91; pointer-events: none;
+    background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.5) 100%);
+  }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  /* ---------- boot loader ---------- */
+  #boot {
+    position: fixed; inset: 0; z-index: 200; background: #000;
+    display: flex; align-items: flex-end; padding: 6vh 6vw;
+    transition: opacity 0.45s ease, visibility 0.45s;
+  }
+  #boot.done { opacity: 0; visibility: hidden; }
+  #boot pre {
+    font-family: var(--mono); font-size: 12px; line-height: 2;
+    color: var(--green); white-space: pre-wrap;
+  }
+  #boot .cursor { display: inline-block; width: 8px; height: 14px; background: var(--green); vertical-align: -2px; animation: blink 0.7s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
 
-  <style>
-    :root {
-      --bg: #0d0d0f;
-      --surface: #131316;
-      --rule: #1e1e22;
-      --rule-faint: #17171a;
-      --text-0: #55555e;   /* meta, dim */
-      --text-1: #8f8f96;   /* body */
-      --text-2: #c9c9cf;   /* bright */
-      --text-3: #f2f2f4;   /* max */
-      --warm: #a08555;     /* brass */
-      --warm-hi: #c4a875;  /* brass, lit */
-    }
+  /* ---------- cursor asterisk ---------- */
+  #asterisk {
+    position: fixed; z-index: 150; width: 22px; height: 22px; pointer-events: none;
+    top: 0; left: 0; transform: translate(-50%, -50%);
+    transition: opacity 0.3s; opacity: 0;
+  }
+  #asterisk svg { width: 100%; height: 100%; animation: spin 6s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (hover: none), (pointer: coarse) {
+    body { cursor: auto; }
+    #asterisk { display: none; }
+  }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+  /* ---------- WebGL canvas ---------- */
+  #mesh {
+    position: fixed; inset: 0; z-index: 0; display: block;
+  }
 
-    html { scroll-behavior: smooth; }
+  main { position: relative; z-index: 10; }
 
-    body {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 13px;
-      background: var(--bg);
-      color: var(--text-1);
-      line-height: 1.8;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      overflow-x: hidden;
-    }
+  /* ---------- hero ---------- */
+  .hero {
+    min-height: 100vh; min-height: 100svh;
+    display: flex; flex-direction: column; justify-content: space-between;
+    padding: 4.5vh 6vw 0;
+    position: relative;
+  }
+  .hero-top {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim);
+  }
+  .hero-top .sig { color: var(--green); }
+  .hero-name {
+    font-family: var(--serif); font-weight: 200;
+    font-size: clamp(72px, 14.5vw, 220px);
+    line-height: 0.88; letter-spacing: -0.02em;
+    color: var(--white); text-transform: uppercase;
+    margin-top: 8vh;
+  }
+  .hero-name .alt { color: var(--green); }
+  .hero-sub {
+    margin-top: 4vh; max-width: 46ch; font-size: 13px; color: var(--muted);
+  }
+  .hero-sub .prompt { color: var(--green); }
+  .hero-sub em {
+    font-family: var(--serif); font-style: italic; font-weight: 300;
+    font-size: 17px; color: var(--white); letter-spacing: 0.01em;
+  }
+  .hero-meta {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    border-top: 0.5px solid var(--hairline);
+    margin-top: 8vh; padding: 18px 0 26px;
+    gap: 16px;
+  }
+  .hero-meta .cell .k {
+    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--dim);
+    display: block; margin-bottom: 6px;
+  }
+  .hero-meta .cell .v { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  .hero-meta .cell .v.on { color: var(--green); }
+  .hero-meta .cell .v.on::before { content: "● "; font-size: 8px; vertical-align: 2px; animation: blink 1.4s steps(1) infinite; }
 
-    ::selection { background: var(--warm); color: #0d0d0f; }
+  /* ---------- sections ---------- */
+  section { padding: 0 6vw; margin: 14vh 0; position: relative; }
+  .sec-head {
+    display: flex; align-items: baseline; gap: 18px;
+    border-bottom: 0.5px solid var(--hairline);
+    padding-bottom: 14px; margin-bottom: 0;
+  }
+  .sec-head .num { font-size: 12px; color: var(--green); }
+  .sec-head h2 {
+    font-family: var(--serif); font-weight: 200; font-size: clamp(34px, 4.6vw, 64px);
+    line-height: 1; color: var(--white); text-transform: uppercase; letter-spacing: -0.01em;
+  }
+  .sec-head .tail { margin-left: auto; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--dim); }
 
-    /* thin dark scrollbar, brass on hover */
-    ::-webkit-scrollbar { width: 8px; height: 8px; }
-    ::-webkit-scrollbar-track { background: var(--bg); }
-    ::-webkit-scrollbar-thumb { background: #26262b; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: var(--warm); }
+  /* ---------- rows ---------- */
+  .rows { border-bottom: 0.5px solid var(--hairline); }
+  .row {
+    display: grid;
+    grid-template-columns: 4.5ch 1fr auto;
+    align-items: baseline; gap: 2.5vw;
+    padding: 2.4vh 0 2.4vh 1.2vw;
+    border-top: 0.5px solid var(--hairline);
+    border-left: 0.208333vw solid transparent;
+    position: relative;
+    transition: border-left-color 0.25s, background 0.25s;
+  }
+  .row .idx { font-size: 12px; color: var(--dim); transition: color 0.25s; }
+  .row .name {
+    font-family: var(--mono); font-weight: 500; text-transform: uppercase;
+    font-size: clamp(26px, 4.513888vw, 72px); line-height: 1.02;
+    letter-spacing: -0.02em; color: var(--muted);
+    transition: color 0.25s;
+    white-space: nowrap; overflow: hidden;
+  }
+  .row .meta { font-size: 11px; color: var(--dim); text-align: right; letter-spacing: 0.08em; text-transform: uppercase; }
+  .row .meta .stars { color: var(--muted); }
+  .row:hover { border-left-color: var(--green); background: rgba(0, 244, 142, 0.035); }
+  .row:hover .name { color: var(--white); }
+  .row:hover .idx { color: var(--green); }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-      transition: color 0.14s ease;
-    }
+  .row .desc {
+    grid-column: 2 / -1;
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .row:hover .desc, .row:focus-within .desc { max-height: 40px; }
+  .desc-inner {
+    display: flex; gap: 2ch; align-items: baseline;
+    font-size: 12px; color: var(--muted); padding-top: 10px;
+    white-space: nowrap; overflow: hidden;
+  }
+  .desc-inner .arrow { color: var(--green); }
+  .desc-inner .marq { overflow: hidden; flex: 1; }
+  .desc-inner .marq span { display: inline-block; }
+  .row:hover .desc-inner .marq.long span { animation: marq 9s steps(240) infinite; }
+  @keyframes marq { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
 
-    :focus-visible {
-      outline: 1px solid var(--warm);
-      outline-offset: 3px;
-      border-radius: 1px;
-    }
+  /* featured consultancy row */
+  .row.feature { border-left-color: var(--green); }
+  .row.feature .name { color: var(--white); }
+  .row.feature .name .tld { color: var(--green); }
+  .row.feature:hover { background: rgba(0, 244, 142, 0.06); }
 
-    .skip-link {
-      position: fixed;
-      top: -3rem;
-      left: 1rem;
-      z-index: 100;
-      background: var(--bg);
-      color: var(--warm-hi);
-      font-size: 11px;
-      padding: 0.4rem 0.8rem;
-      border: 1px solid var(--rule);
-      transition: top 0.15s ease;
-    }
-    .skip-link:focus { top: 1rem; }
+  /* stars bar */
+  .bar { display: inline-block; height: 8px; background: rgba(0,244,142,0.18); width: 64px; vertical-align: 0; margin-right: 1ch; position: relative; }
+  .bar i { position: absolute; inset: 0 auto 0 0; background: var(--green); display: block; }
 
-    /* ---- Scroll progress hairline ---- */
-    .progress {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      height: 2px;
-      z-index: 60;
-      pointer-events: none;
-    }
-    .progress-bar {
-      height: 100%;
-      background: var(--warm);
-      transform: scaleX(0);
-      transform-origin: 0 50%;
-    }
+  /* ---------- writing ---------- */
+  .wrow {
+    display: grid; grid-template-columns: 4.5ch 1fr auto; gap: 2.5vw; align-items: baseline;
+    padding: 2vh 0 2vh 1.2vw; border-top: 0.5px solid var(--hairline);
+    border-left: 0.208333vw solid transparent; transition: border-left-color 0.25s, background 0.25s;
+  }
+  .wrow .idx { font-size: 12px; color: var(--dim); }
+  .wrow .t { font-family: var(--serif); font-weight: 300; font-size: clamp(20px, 2.4vw, 34px); color: var(--muted); transition: color 0.25s; }
+  .wrow .src { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--dim); }
+  .wrow:hover { border-left-color: var(--green); background: rgba(0, 244, 142, 0.035); }
+  .wrow:hover .t { color: var(--white); }
 
-    /* ---- Fixed header (blend-inverts over content) ---- */
-    .site-head {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 50;
-      mix-blend-mode: difference;
-      color: #e8e8e8;
-    }
-    .site-head .head-in {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .h-name {
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: inherit;
-      opacity: 0.75;
-    }
-    .h-nav { display: flex; gap: 1.6rem; }
-    .h-nav a {
-      font-size: 11px;
-      letter-spacing: 0.05em;
-      color: inherit;
-      opacity: 0.55;
-      transition: opacity 0.14s ease;
-    }
-    .h-nav a:hover { opacity: 1; }
-    .h-nav a.active { opacity: 1; }
+  /* ---------- footer ---------- */
+  footer { margin-top: 16vh; border-top: 0.5px solid var(--hairline); position: relative; z-index: 10; }
+  .marquee-strip {
+    overflow: hidden; white-space: nowrap; padding: 2.2vh 0;
+    border-bottom: 0.5px solid var(--hairline);
+  }
+  .marquee-strip span {
+    display: inline-block; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--dim); animation: strip 30s steps(900) infinite;
+  }
+  @keyframes strip { to { transform: translateX(-50%); } }
+  .foot-grid {
+    display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px;
+    padding: 3vh 6vw 4vh; font-size: 11px; color: var(--dim);
+  }
+  .foot-grid a { color: var(--muted); transition: color 0.2s; }
+  .foot-grid a:hover { color: var(--white); }
+  .foot-grid sup { color: var(--green); font-size: 8px; margin-left: 2px; }
 
-    .page {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    /* ---- Intro ---- */
-    .intro { padding: 8.5rem 0 4rem; }
-
-    .intro-avatar {
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      margin-bottom: 2.25rem;
-      filter: grayscale(0.25);
-      box-shadow: 0 0 0 1px var(--rule);
-      transition: filter 0.25s ease, box-shadow 0.25s ease;
-    }
-    .intro-avatar:hover {
-      filter: grayscale(0);
-      box-shadow: 0 0 0 1px var(--warm);
-    }
-
-    .intro h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 400;
-      font-style: italic;
-      font-size: clamp(2.7rem, 7.5vw, 3.6rem);
-      color: var(--text-3);
-      letter-spacing: -0.02em;
-      line-height: 1.05;
-      margin-bottom: 1.4rem;
-      min-height: 1.05em; /* reserve height during decode */
-    }
-
-    .status-line {
-      font-size: 12px;
-      color: var(--text-0);
-      margin-bottom: 2rem;
-      letter-spacing: 0.02em;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-    .status-line .prompt { color: var(--warm); margin-right: 0.55em; }
-    .status-line .status { color: var(--text-1); }
-    .caret {
-      display: inline-block;
-      width: 7px;
-      height: 13px;
-      margin-left: 3px;
-      vertical-align: -2px;
-      background: var(--warm);
-      animation: blink 1.1s steps(1) infinite;
-    }
-    @keyframes blink { 50% { opacity: 0; } }
-
-    .intro-bio {
-      font-size: 13px;
-      line-height: 1.9;
-      max-width: 46ch;
-      margin-bottom: 2.25rem;
-      color: var(--text-1);
-    }
-    .intro-bio em {
-      font-family: 'Cormorant Garamond', serif;
-      font-style: italic;
-      font-size: 1.22em;
-      color: var(--text-2);
-      letter-spacing: 0.01em;
-    }
-
-    .intro-links {
-      display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-    .intro-links a {
-      font-size: 12px;
-      color: var(--text-1);
-      letter-spacing: 0.03em;
-      text-decoration: underline;
-      text-decoration-color: var(--rule);
-      text-underline-offset: 4px;
-      transition: color 0.14s ease, text-decoration-color 0.14s ease;
-    }
-    .intro-links a::after {
-      content: "↗";
-      font-size: 10px;
-      margin-left: 2px;
-      opacity: 0;
-      transition: opacity 0.14s ease;
-    }
-    .intro-links a:hover { color: var(--warm-hi); text-decoration-color: var(--warm); }
-    .intro-links a:hover::after { opacity: 0.8; }
-
-    /* ---- Sections ---- */
-    .section {
-      padding: 3.25rem 0;
-      border-top: 1px solid var(--rule);
-      scroll-margin-top: 4.5rem;
-    }
-    .section-label {
-      display: flex;
-      align-items: baseline;
-      gap: 0.9rem;
-      margin-bottom: 2.5rem;
-    }
-    .sl-num {
-      font-size: 10px;
-      color: var(--text-0);
-      letter-spacing: 0.08em;
-    }
-    .sl-text {
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: var(--warm);
-      white-space: nowrap;
-    }
-    .sl-meta {
-      font-size: 10px;
-      color: var(--text-0);
-      letter-spacing: 0.06em;
-      white-space: nowrap;
-    }
-    .sl-rule {
-      flex: 1;
-      height: 1px;
-      background: var(--rule-faint);
-      transform: translateY(-2px);
-    }
-
-    /* ---- Project list ---- */
-    .p-item {
-      display: block;
-      margin-bottom: 2.1rem;
-    }
-    .p-item:last-child { margin-bottom: 0; }
-
-    .p-row {
-      display: flex;
-      align-items: baseline;
-      margin-bottom: 0.3rem;
-    }
-    /* read/unread marker */
-    .p-mark, .w-mark {
-      flex: 0 0 13px;
-      position: relative;
-      top: -1px;
-    }
-    .p-mark::before, .w-mark::before {
-      content: "";
-      display: inline-block;
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background: var(--warm);
-      transition: background 0.2s ease, box-shadow 0.2s ease;
-    }
-    .seen .p-mark::before, .seen .w-mark::before {
-      background: transparent;
-      box-shadow: inset 0 0 0 1px var(--text-0);
-    }
-    .p-name {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--text-2);
-      white-space: nowrap;
-      transition: color 0.14s ease;
-    }
-    .seen .p-name, .seen .w-title { color: var(--text-0); }
-    .p-item:hover .p-name { color: var(--text-3); }
-    .p-dots, .w-dots {
-      flex: 1;
-      height: 1em;
-      margin: 0 10px;
-      border-bottom: 1px dotted #2a2a2e;
-      transition: border-color 0.14s ease;
-    }
-    .p-item:hover .p-dots, .w-item:hover .w-dots { border-color: var(--warm); }
-    .p-lang {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 11px;
-      color: var(--text-0);
-      white-space: nowrap;
-      margin-right: 14px;
-      transition: color 0.14s ease;
-    }
-    .p-lang svg { display: block; }
-    .p-item:hover .p-lang { color: var(--warm-hi); }
-    .p-stars {
-      font-size: 12px;
-      font-weight: 500;
-      color: var(--warm);
-      min-width: 56px;
-      text-align: right;
-      white-space: nowrap;
-      font-variant-numeric: tabular-nums;
-      transition: color 0.14s ease;
-    }
-    .p-item:hover .p-stars { color: var(--warm-hi); }
-    .p-desc {
-      font-size: 12px;
-      color: var(--text-0);
-      line-height: 1.75;
-      max-width: 460px;
-      padding-left: 13px;
-      transition: color 0.14s ease;
-    }
-    .p-item:hover .p-desc { color: var(--text-1); }
-
-    /* ---- Writing list ---- */
-    .w-item {
-      display: flex;
-      align-items: baseline;
-      padding: 0.65rem 0;
-    }
-    .w-title {
-      font-size: 13px;
-      color: var(--text-2);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: clip;
-      transition: color 0.14s ease;
-    }
-    .w-item:hover .w-title { color: var(--warm-hi); }
-    .seen.w-item:hover .w-title { color: var(--text-1); }
-    .w-where {
-      font-size: 11px;
-      color: var(--text-0);
-      white-space: nowrap;
-    }
-
-    /* ---- Pentest CTA ---- */
-    .cta {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-bottom: 0.9rem;
-    }
-    .cta-q {
-      position: relative;
-      font-family: 'Cormorant Garamond', serif;
-      font-style: italic;
-      font-weight: 400;
-      font-size: clamp(1.7rem, 4.5vw, 2.1rem);
-      color: var(--text-2);
-      letter-spacing: -0.01em;
-      transition: color 0.14s ease;
-      padding-bottom: 6px;
-    }
-    /* hairline partial underline that extends on hover */
-    .cta-q::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: 1px;
-      width: 38%;
-      background: var(--warm);
-      opacity: 0.55;
-      transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
-    }
-    .cta:hover .cta-q { color: var(--text-3); }
-    .cta:hover .cta-q::after { width: 100%; opacity: 1; }
-    .cta-link {
-      font-size: 12px;
-      color: var(--warm);
-      letter-spacing: 0.04em;
-      white-space: nowrap;
-      transition: color 0.14s ease;
-    }
-    .cta-link .arr {
-      display: inline-block;
-      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .cta:hover .cta-link { color: var(--warm-hi); }
-    .cta:hover .cta-link .arr { transform: translateX(4px); }
-    .cta-desc {
-      font-size: 12px;
-      color: var(--text-0);
-      line-height: 1.75;
-      max-width: 460px;
-    }
-    .cta-desc a {
-      color: var(--warm);
-      text-decoration: underline;
-      text-decoration-color: var(--rule);
-      text-underline-offset: 3px;
-    }
-    .cta-desc a:hover { text-decoration-color: var(--warm); }
-
-    /* ---- Footer ---- */
-    footer {
-      border-top: 1px solid var(--rule);
-      padding: 2rem 0 1.4rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .f-left {
-      font-family: 'Cormorant Garamond', serif;
-      font-style: italic;
-      font-size: 15px;
-      color: var(--text-0);
-    }
-    .f-time {
-      font-size: 11px;
-      color: var(--text-0);
-      letter-spacing: 0.06em;
-      font-variant-numeric: tabular-nums;
-    }
-    .f-links { display: flex; gap: 1.5rem; }
-    .f-links a {
-      font-size: 11px;
-      color: var(--text-0);
-      transition: color 0.14s ease;
-    }
-    .f-links a:hover { color: var(--text-2); }
-
-    .colophon {
-      padding: 0 0 2.5rem;
-      font-size: 10px;
-      letter-spacing: 0.08em;
-      color: #3c3c44;
-    }
-
-    /* ---- Responsive ---- */
-    @media (max-width: 600px) {
-      .page { padding: 0 1.25rem; }
-      .site-head .head-in { padding: 0.9rem 1.25rem; flex-wrap: wrap; row-gap: 0.3rem; }
-      .h-nav { gap: 1rem; }
-      .h-nav a[href="https://github.com/momenbasel"] { display: none; } /* in intro links + footer */
-      .intro { padding: 6.5rem 0 3rem; }
-      .status-line { font-size: 11px; }
-      .section { padding: 2.25rem 0; }
-      .p-desc { max-width: 100%; }
-      .p-dots, .w-dots { display: none; }
-      .p-row { flex-wrap: wrap; gap: 0.4rem; }
-      .p-lang { margin-right: 8px; margin-left: auto; }
-      .w-item { gap: 0.75rem; }
-      .w-title { white-space: normal; }
-      .w-where { margin-left: auto; padding-left: 0.5rem; }
-      .cta { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
-      footer { flex-direction: column; align-items: flex-start; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      .caret { animation: none; }
-      *, *::before, *::after { transition-duration: 0.01ms !important; }
-    }
-  </style>
+  @media (max-width: 640px) {
+    .hero-meta { grid-template-columns: repeat(2, 1fr); row-gap: 20px; }
+    .row { grid-template-columns: 3.5ch 1fr; }
+    .row .meta { display: none; }
+    .row .desc { grid-column: 2; }
+    .wrow { grid-template-columns: 3.5ch 1fr; }
+    .wrow .src { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-strip span, #asterisk svg, .desc-inner .marq.long span { animation: none !important; }
+  }
+</style>
 </head>
-<body>
+<body class="crt">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRQWMMQL"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<a class="skip-link" href="#main">skip to content</a>
-<div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+<div id="boot"><pre id="bootlog"></pre></div>
 
-<header class="site-head">
-  <div class="head-in">
-    <span class="h-name">Moamen Basel</span>
-    <nav class="h-nav" aria-label="Primary">
-      <a href="#projects" data-spy="projects">projects</a>
-      <a href="#writing" data-spy="writing">writing</a>
-      <a href="https://greycorelabs.com/">pentest</a>
-      <a href="https://github.com/momenbasel">github</a>
-    </nav>
-  </div>
-</header>
-
-<div class="page" id="main">
-
-  <div class="intro">
-    <img class="intro-avatar" src="https://avatars.githubusercontent.com/u/8724766?v=4" alt="Moamen Basel" fetchpriority="high">
-    <h1 data-decode data-decode-delay="150">Moamen Basel</h1>
-    <p class="status-line" aria-label="Current focus">
-      <span class="prompt">~$</span><span class="status" id="statusText">offensive security</span><span class="caret" aria-hidden="true"></span>
-    </p>
-    <p class="intro-bio">
-      Security engineer specializing in offensive security, vulnerability
-      research, and automation. Building open-source tools to
-      <em>dissect digital architecture.</em>
-    </p>
-    <div class="intro-links">
-      <a href="https://github.com/momenbasel">github</a>
-      <a href="https://x.com/momenbassel">x.com</a>
-      <a href="https://www.linkedin.com/in/momenbasel/">linkedin</a>
-      <a href="https://medium.com/@momenbasel">medium</a>
-      <a href="mailto:hello@moamenbasel.com">email</a>
-    </div>
-  </div>
-
-  <section class="section" id="pentest">
-    <div class="section-label">
-      <span class="sl-num">01</span>
-      <span class="sl-text" data-decode>Grey Core Labs</span>
-      <span class="sl-rule" aria-hidden="true"></span>
-      <span class="sl-meta">consultancy</span>
-    </div>
-    <a class="cta" href="https://greycorelabs.com/">
-      <span class="cta-q" data-decode>Want a free pentest?</span>
-      <span class="cta-link">greycorelabs.com <span class="arr">→</span></span>
-    </a>
-    <div class="cta-desc">
-      My offensive-security consultancy. Vulnerability research, web/app pentests, and red team
-      engagements. First scope is on the house — <a href="https://greycorelabs.com/">Grey Core Labs</a>.
-    </div>
-  </section>
-
-  <section class="section" id="projects">
-    <div class="section-label">
-      <span class="sl-num">02</span>
-      <span class="sl-text" data-decode>Projects</span>
-      <span class="sl-rule" aria-hidden="true"></span>
-      <span class="sl-meta" id="starTotal"></span>
-    </div>
-
-    <a href="https://momenbasel.github.io/keyFinder/" class="p-item" data-repo="keyFinder">
-      <div class="p-row">
-        <span class="p-mark" aria-hidden="true"></span>
-        <span class="p-name">keyFinder</span>
-        <span class="p-dots" aria-hidden="true"></span>
-        <span class="p-lang"><svg width="7" height="7" viewBox="0 0 7 7" aria-hidden="true"><rect width="7" height="7" fill="currentColor"/></svg>javascript</span>
-        <span class="p-stars" data-stars="692">★ 692</span>
-      </div>
-      <div class="p-desc">Chrome extension that passively scans every page for leaked API keys, tokens, and secrets. 80+ patterns, zero config.</div>
-    </a>
-
-    <a href="https://github.com/momenbasel/PureMac" class="p-item" data-repo="PureMac">
-      <div class="p-row">
-        <span class="p-mark" aria-hidden="true"></span>
-        <span class="p-name">PureMac</span>
-        <span class="p-dots" aria-hidden="true"></span>
-        <span class="p-lang"><svg width="7" height="7" viewBox="0 0 7 7" aria-hidden="true"><circle cx="3.5" cy="3.5" r="3.5" fill="currentColor"/></svg>swift</span>
-        <span class="p-stars" data-stars="5206">★ 5,206</span>
-      </div>
-      <div class="p-desc">Open-source macOS cleaner. Native SwiftUI, zero telemetry. The CleanMyMac alternative that respects your privacy.</div>
-    </a>
-
-    <a href="https://github.com/momenbasel/Phosphor" class="p-item" data-repo="Phosphor">
-      <div class="p-row">
-        <span class="p-mark" aria-hidden="true"></span>
-        <span class="p-name">Phosphor</span>
-        <span class="p-dots" aria-hidden="true"></span>
-        <span class="p-lang"><svg width="7" height="7" viewBox="0 0 7 7" aria-hidden="true"><circle cx="3.5" cy="3.5" r="3.5" fill="currentColor"/></svg>swift</span>
-        <span class="p-stars" data-stars="435">★ 435</span>
-      </div>
-      <div class="p-desc">Free, open-source iOS device manager for macOS. Browse backups, export messages, extract photos, manage apps — no iCloud lock-in.</div>
-    </a>
-
-    <a href="https://github.com/momenbasel/ConsoleMini" class="p-item" data-repo="ConsoleMini">
-      <div class="p-row">
-        <span class="p-mark" aria-hidden="true"></span>
-        <span class="p-name">ConsoleMini</span>
-        <span class="p-dots" aria-hidden="true"></span>
-        <span class="p-lang"><svg width="7" height="7" viewBox="0 0 7 7" aria-hidden="true"><rect x="0.75" y="0.75" width="5.5" height="5.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>typescript</span>
-        <span class="p-stars" data-stars="70">★ 70</span>
-      </div>
-      <div class="p-desc">Turn a Mac mini into a living-room retro/PS console. Big-picture launcher built with Electron and React.</div>
-    </a>
-
-    <a href="https://github.com/momenbasel/malware-check" class="p-item" data-repo="malware-check">
-      <div class="p-row">
-        <span class="p-mark" aria-hidden="true"></span>
-        <span class="p-name">malware-check</span>
-        <span class="p-dots" aria-hidden="true"></span>
-        <span class="p-lang"><svg width="8" height="7" viewBox="0 0 8 7" aria-hidden="true"><path d="M4 0 L8 7 H0 Z" fill="currentColor"/></svg>python</span>
-        <span class="p-stars" data-stars="46">★ 46</span>
-      </div>
-      <div class="p-desc">Static and dynamic analysis tool that detects malicious code, suspicious binaries, and privacy violations.</div>
-    </a>
-
-    <a href="https://github.com/momenbasel/subScreen" class="p-item" data-repo="subScreen">
-      <div class="p-row">
-        <span class="p-mark" aria-hidden="true"></span>
-        <span class="p-name">subScreen</span>
-        <span class="p-dots" aria-hidden="true"></span>
-        <span class="p-lang"><svg width="7" height="7" viewBox="0 0 7 7" aria-hidden="true"><rect width="7" height="7" fill="currentColor"/></svg>javascript</span>
-        <span class="p-stars" data-stars="16">★ 16</span>
-      </div>
-      <div class="p-desc">Bulk screenshot tool for web hosts. Point it at a list of subdomains and get visual recon fast.</div>
-    </a>
-
-    <a href="https://momenbasel.github.io/AutoWIFI/" class="p-item" data-repo="AutoWIFI">
-      <div class="p-row">
-        <span class="p-mark" aria-hidden="true"></span>
-        <span class="p-name">AutoWIFI</span>
-        <span class="p-dots" aria-hidden="true"></span>
-        <span class="p-lang"><svg width="8" height="7" viewBox="0 0 8 7" aria-hidden="true"><path d="M4 0 L8 7 H0 Z" fill="currentColor"/></svg>python</span>
-        <span class="p-stars" data-stars="53">★ 53</span>
-      </div>
-      <div class="p-desc">Wireless pentesting framework. Full WPA/WPA2/WEP/WPS attack chain from recon to cracking in one command.</div>
-    </a>
-
-    <a href="https://momenbasel.github.io/FastRecvSMS/" class="p-item" data-repo="FastRecvSMS">
-      <div class="p-row">
-        <span class="p-mark" aria-hidden="true"></span>
-        <span class="p-name">FastRecvSMS</span>
-        <span class="p-dots" aria-hidden="true"></span>
-        <span class="p-lang"><svg width="8" height="7" viewBox="0 0 8 7" aria-hidden="true"><path d="M4 0 L8 7 H0 Z" fill="currentColor"/></svg>python</span>
-        <span class="p-stars" data-stars="15">★ 15</span>
-      </div>
-      <div class="p-desc">SMS verification CLI. Buy temporary numbers and receive OTP codes across 170+ countries.</div>
-    </a>
-
-    <a href="https://github.com/marketplace/actions/vulnhawk-security-scan" class="p-item">
-      <div class="p-row">
-        <span class="p-mark" aria-hidden="true"></span>
-        <span class="p-name">VulnHawk</span>
-        <span class="p-dots" aria-hidden="true"></span>
-        <span class="p-lang"><svg width="8" height="7" viewBox="0 0 8 7" aria-hidden="true"><path d="M4 0 L8 7 H0 Z" fill="currentColor"/></svg>python</span>
-        <span class="p-stars" data-stars="62">★ 62</span>
-      </div>
-      <div class="p-desc">AI-powered SAST scanner. Finds auth bypass, IDOR, and logic bugs that Semgrep and CodeQL miss.</div>
-    </a>
-
-    <a href="https://momenbasel.github.io/htb-writeups/" class="p-item" data-repo="htb-writeups">
-      <div class="p-row">
-        <span class="p-mark" aria-hidden="true"></span>
-        <span class="p-name">htb-writeups</span>
-        <span class="p-dots" aria-hidden="true"></span>
-        <span class="p-lang"><svg width="7" height="7" viewBox="0 0 7 7" aria-hidden="true"><rect x="1.75" y="1.75" width="3.5" height="3.5" transform="rotate(45 3.5 3.5)" fill="currentColor" transform-origin="3.5 3.5"/></svg>html</span>
-        <span class="p-stars" data-stars="160">★ 160</span>
-      </div>
-      <div class="p-desc">Hack The Box writeup collection. Walkthroughs for retired machines and challenges.</div>
-    </a>
-  </section>
-
-  <section class="section" id="writing">
-    <div class="section-label">
-      <span class="sl-num">03</span>
-      <span class="sl-text" data-decode>Writing</span>
-      <span class="sl-rule" aria-hidden="true"></span>
-      <span class="sl-meta">notes &amp; research</span>
-    </div>
-
-    <a href="https://medium.com/@momenbasel/from-parameter-pollution-to-xss-d095e13be060" class="w-item">
-      <span class="w-mark" aria-hidden="true"></span>
-      <span class="w-title">From Parameter Pollution to XSS</span>
-      <span class="w-dots" aria-hidden="true"></span>
-      <span class="w-where">medium</span>
-    </a>
-
-    <a href="https://momenbasel.github.io/htb-writeups/" class="w-item">
-      <span class="w-mark" aria-hidden="true"></span>
-      <span class="w-title">Hack The Box Machine Writeups</span>
-      <span class="w-dots" aria-hidden="true"></span>
-      <span class="w-where">collection</span>
-    </a>
-
-    <a href="https://medium.com/@momenbasel" class="w-item">
-      <span class="w-mark" aria-hidden="true"></span>
-      <span class="w-title">All posts</span>
-      <span class="w-dots" aria-hidden="true"></span>
-      <span class="w-where">medium</span>
-    </a>
-  </section>
-
-  <footer>
-    <span class="f-left">Moamen Basel</span>
-    <span class="f-time" id="localTime" title="your local time"></span>
-    <div class="f-links">
-      <a href="https://greycorelabs.com/">grey core labs</a>
-      <a href="https://github.com/momenbasel">github</a>
-      <a href="https://x.com/momenbassel">x</a>
-      <a href="https://www.linkedin.com/in/momenbasel/">linkedin</a>
-    </div>
-  </footer>
-
-  <div class="colophon">© 2026 — hand-built, no framework · set in cormorant &amp; plex mono · view source welcome</div>
-
+<div id="asterisk" aria-hidden="true">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#00F48E" stroke-width="1.6">
+    <path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9L4.9 19.1"/>
+  </svg>
 </div>
 
+<canvas id="mesh"></canvas>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="hero-top">
+      <span>mb—26</span>
+      <span class="sig">[■] signal: strong</span>
+      <span>v2.0 / webgl</span>
+    </div>
+
+    <div>
+      <h1 class="hero-name" id="scramble" data-text="MOAMEN|BASEL">MOAMEN BASEL</h1>
+      <p class="hero-sub">
+        <span class="prompt">~$</span> offensive security<br/>
+        Security engineer specializing in offensive security, vulnerability research, and automation.
+        Building open-source tools to <em>dissect digital architecture.</em>
+      </p>
+    </div>
+
+    <div class="hero-meta" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="cell"><span class="k">Discipline</span><span class="v">Offensive Sec</span></div>
+      <div class="cell"><span class="k">Focus</span><span class="v">Vuln Research</span></div>
+      <div class="cell"><span class="k">Status</span><span class="v on">Available</span></div>
+    </div>
+  </header>
+
+  <!-- ============ 01 CONSULTANCY ============ -->
+  <section id="consultancy">
+    <div class="sec-head">
+      <span class="num">01</span>
+      <h2>Consultancy</h2>
+      <span class="tail">first scope on the house</span>
+    </div>
+    <div class="rows">
+      <a class="row feature" href="https://greycorelabs.com" target="_blank" rel="noopener">
+        <span class="idx">#01</span>
+        <span class="name">Grey Core Labs<span class="tld">.com ↗</span></span>
+        <span class="meta">red team · pentest · vuln research</span>
+        <span class="desc"><span class="desc-inner">
+          <span class="arrow">→</span>
+          <span class="marq long"><span>My offensive-security consultancy. Vulnerability research, web/app pentests, and red team engagements. First scope is on the house.&nbsp;&nbsp;&nbsp;</span></span>
+        </span></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ 02 PROJECTS ============ -->
+  <section id="projects">
+    <div class="sec-head">
+      <span class="num">02</span>
+      <h2>Projects</h2>
+      <span class="tail">Σ 6,755 ★ across the archive</span>
+    </div>
+    <div class="rows" id="project-rows"></div>
+  </section>
+
+  <!-- ============ 03 WRITING ============ -->
+  <section id="writing">
+    <div class="sec-head">
+      <span class="num">03</span>
+      <h2>Writing</h2>
+      <span class="tail">notes &amp; research</span>
+    </div>
+    <div class="rows" style="border-bottom: none;">
+      <a class="wrow" href="https://medium.com/@momenbasel/from-parameter-pollution-to-xss-d095e13be060" target="_blank" rel="noopener">
+        <span class="idx">#01</span>
+        <span class="t">From Parameter Pollution to XSS</span>
+        <span class="src">medium ↗</span>
+      </a>
+      <a class="wrow" href="https://momenbasel.github.io/htb-writeups/" target="_blank" rel="noopener">
+        <span class="idx">#02</span>
+        <span class="t">Hack The Box Machine Writeups</span>
+        <span class="src">collection ↗</span>
+      </a>
+      <a class="wrow" href="https://medium.com/@momenbasel" target="_blank" rel="noopener">
+        <span class="idx">#03</span>
+        <span class="t">All posts</span>
+        <span class="src">medium ↗</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="marquee-strip">
+    <span>OFFENSIVE SECURITY — VULNERABILITY RESEARCH — AUTOMATION — OPEN SOURCE — OFFENSIVE SECURITY — VULNERABILITY RESEARCH — AUTOMATION — OPEN SOURCE — </span>
+  </div>
+  <div class="foot-grid">
+    <span>© 2026 — hand-built, no framework · set in cormorant &amp; plex mono</span>
+    <span>
+      <a href="https://github.com/momenbasel" target="_blank" rel="noopener">github<sup>1</sup></a> ·
+      <a href="https://x.com/momenbassel" target="_blank" rel="noopener">x<sup>2</sup></a> ·
+      <a href="https://www.linkedin.com/in/momenbasel/" target="_blank" rel="noopener">linkedin<sup>3</sup></a> ·
+      <a href="https://greycorelabs.com/" target="_blank" rel="noopener">greycorelabs<sup>4</sup></a> ·
+      <a href="mailto:hello@moamenbasel.com">email<sup>5</sup></a>
+    </span>
+    <span>view source welcome</span>
+  </div>
+</footer>
+
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.166.1/build/three.module.js" } }
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+
+/* ============================================================
+   THREE.JS — attack-surface node mesh
+   particles drift; edges form when nodes are within threshold;
+   a wireframe core rotates slowly; mouse drives parallax.
+   ============================================================ */
+const canvas = document.getElementById('mesh');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
+renderer.setClearColor(0x000000, 1);
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+
+const scene = new THREE.Scene();
+scene.fog = new THREE.FogExp2(0x000000, 0.12);
+const camera = new THREE.PerspectiveCamera(60, innerWidth / innerHeight, 0.1, 100);
+camera.position.z = 4.2;
+
+const isMobile = matchMedia('(max-width: 640px)').matches;
+const N = isMobile ? 220 : 520;
+const BOUND = 2.6;
+const LINK = isMobile ? 0.62 : 0.55;
+
+const pos = new Float32Array(N * 3);
+const vel = new Float32Array(N * 3);
+for (let i = 0; i < N; i++) {
+  pos[i*3]   = (Math.random() * 2 - 1) * BOUND;
+  pos[i*3+1] = (Math.random() * 2 - 1) * BOUND * 0.7;
+  pos[i*3+2] = (Math.random() * 2 - 1) * BOUND;
+  vel[i*3]   = (Math.random() - 0.5) * 0.0035;
+  vel[i*3+1] = (Math.random() - 0.5) * 0.0035;
+  vel[i*3+2] = (Math.random() - 0.5) * 0.0035;
+}
+
+const pGeo = new THREE.BufferGeometry();
+pGeo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+const points = new THREE.Points(pGeo, new THREE.PointsMaterial({
+  color: 0x00F48E, size: 0.022, transparent: true, opacity: 0.9,
+  blending: THREE.AdditiveBlending, depthWrite: false, sizeAttenuation: true
+}));
+scene.add(points);
+
+const maxLinks = N * 8;
+const lPos = new Float32Array(maxLinks * 6);
+const lGeo = new THREE.BufferGeometry();
+lGeo.setAttribute('position', new THREE.BufferAttribute(lPos, 3));
+const lines = new THREE.LineSegments(lGeo, new THREE.LineBasicMaterial({
+  color: 0x00F48E, transparent: true, opacity: 0.16,
+  blending: THREE.AdditiveBlending, depthWrite: false
+}));
+scene.add(lines);
+
+const core = new THREE.Mesh(
+  new THREE.IcosahedronGeometry(1.15, 1),
+  new THREE.MeshBasicMaterial({ color: 0x00F48E, wireframe: true, transparent: true, opacity: 0.07 })
+);
+scene.add(core);
+
+let mx = 0, my = 0, tx = 0, ty = 0;
+addEventListener('pointermove', e => {
+  tx = (e.clientX / innerWidth - 0.5);
+  ty = (e.clientY / innerHeight - 0.5);
+}, { passive: true });
+
+function resize() {
+  renderer.setSize(innerWidth, innerHeight);
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+}
+addEventListener('resize', resize);
+resize();
+
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+let hidden = false;
+document.addEventListener('visibilitychange', () => hidden = document.hidden);
+
+function frame() {
+  requestAnimationFrame(frame);
+  if (hidden) return;
+
+  for (let i = 0; i < N; i++) {
+    let x = pos[i*3] + vel[i*3], y = pos[i*3+1] + vel[i*3+1], z = pos[i*3+2] + vel[i*3+2];
+    if (x < -BOUND || x > BOUND) vel[i*3] *= -1;
+    if (y < -BOUND*0.7 || y > BOUND*0.7) vel[i*3+1] *= -1;
+    if (z < -BOUND || z > BOUND) vel[i*3+2] *= -1;
+    pos[i*3] = x; pos[i*3+1] = y; pos[i*3+2] = z;
+  }
+  pGeo.attributes.position.needsUpdate = true;
+
+  let li = 0;
+  outer:
+  for (let i = 0; i < N; i++) {
+    for (let j = i + 1; j < N; j++) {
+      const dx = pos[i*3] - pos[j*3];
+      const dy = pos[i*3+1] - pos[j*3+1];
+      const dz = pos[i*3+2] - pos[j*3+2];
+      if (dx*dx + dy*dy + dz*dz < LINK * LINK) {
+        lPos[li++] = pos[i*3]; lPos[li++] = pos[i*3+1]; lPos[li++] = pos[i*3+2];
+        lPos[li++] = pos[j*3]; lPos[li++] = pos[j*3+1]; lPos[li++] = pos[j*3+2];
+        if (li >= lPos.length) break outer;
+      }
+    }
+  }
+  lGeo.setDrawRange(0, li / 3);
+  lGeo.attributes.position.needsUpdate = true;
+
+  core.rotation.y += 0.0016;
+  core.rotation.x += 0.0007;
+  mx += (tx - mx) * 0.04;
+  my += (ty - my) * 0.04;
+  camera.position.x = mx * 0.9;
+  camera.position.y = -my * 0.6;
+  camera.lookAt(0, 0, 0);
+
+  renderer.render(scene, camera);
+}
+
+const snapTest = location.search.includes('snap');
+if (reduced && !snapTest) { renderer.render(scene, camera); } else { frame(); }
+</script>
+
 <script>
+/* ============================================================
+   BOOT SEQUENCE
+   ============================================================ */
+const SNAP = new URLSearchParams(location.search).has('snap');
+if (SNAP) {
+  document.documentElement.style.scrollBehavior = 'auto';
+  const st = document.createElement('style');
+  st.textContent = '.hero{min-height:720px !important;}';
+  document.head.appendChild(st);
+}
+
 (function () {
-  'use strict';
-
-  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  /* ============================================================
-     Decode engine — characters lock into place left→right from a
-     cipher charset. Progress-based, one-shot per invocation.
-     ============================================================ */
-  var GLYPHS = '!<>-_\\/[]{}=+*^?#$%&@~';
-
-  function decode(el, finalText, duration, onDone) {
-    duration = duration || 1000;
-    if (reducedMotion) {
-      el.textContent = finalText;
-      if (onDone) onDone();
-      return;
-    }
-    var start = null;
-    var len = finalText.length;
-    function frame(now) {
-      if (start === null) start = now;
-      var p = Math.min((now - start) / duration, 1);
-      var lock = Math.floor(p * len);
-      var out = finalText.slice(0, lock);
-      for (var i = lock; i < len; i++) {
-        var c = finalText.charAt(i);
-        out += (c === ' ' || c === '\n') ? c : GLYPHS[(Math.random() * GLYPHS.length) | 0];
-      }
-      el.textContent = out;
-      if (p < 1) requestAnimationFrame(frame);
-      else { el.textContent = finalText; if (onDone) onDone(); }
-    }
-    requestAnimationFrame(frame);
+  if (SNAP) {
+    document.getElementById('boot').remove();
+    document.getElementById('scramble').innerHTML = 'MOAMEN <span class="alt">BASEL</span>';
+    return;
   }
-
-  /* Elements marked data-decode: run when scrolled into view (50%),
-     one-shot. Hero name runs on load with its own delay. */
-  var decodeSeen = new WeakSet();
-  function armDecode(el) {
-    var finalText = el.textContent;
-    var run = function () {
-      if (decodeSeen.has(el)) return;
-      decodeSeen.add(el);
-      var delay = parseInt(el.getAttribute('data-decode-delay') || '0', 10);
-      setTimeout(function () {
-        decode(el, finalText, Math.max(650, finalText.length * 55));
-      }, reducedMotion ? 0 : delay);
-    };
-    if (reducedMotion) { return; } // leave real text as-is
-    if ('IntersectionObserver' in window) {
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.intersectionRatio >= 0.5 || e.isIntersecting) {
-            io.unobserve(el);
-            run();
-          }
-        });
-      }, { threshold: 0.5 });
-      io.observe(el);
+  const lines = [
+    '[ BOOT ] moamenbasel kernel v2.0',
+    '[ OK ] surface scan — 10 tools mounted',
+    '[ OK ] mesh renderer attached',
+    '[ OK ] Σ 6,755 stars indexed',
+    '[ GO ] decrypting interface …'
+  ];
+  const log = document.getElementById('bootlog');
+  const boot = document.getElementById('boot');
+  let i = 0;
+  const t = setInterval(() => {
+    if (i < lines.length) {
+      log.innerHTML += lines[i++] + '\n';
     } else {
-      run();
+      clearInterval(t);
+      log.innerHTML += '<span class="cursor"></span>';
+      setTimeout(() => { boot.classList.add('done'); scrambleName(); }, 420);
     }
-  }
-  Array.prototype.forEach.call(document.querySelectorAll('[data-decode]'), armDecode);
-
-  /* ============================================================
-     Rotating status line — decode-swap between focus areas.
-     ============================================================ */
-  var STATUSES = ['offensive security', 'macOS & iOS tooling', 'vulnerability research', 'automation'];
-  var statusEl = document.getElementById('statusText');
-  if (statusEl && !reducedMotion) {
-    var si = 0;
-    setTimeout(function cycle() {
-      si = (si + 1) % STATUSES.length;
-      decode(statusEl, STATUSES[si], 700);
-      setTimeout(cycle, 5200);
-    }, 5200);
-  }
-
-  /* Nav links: quick decode flicker on hover */
-  Array.prototype.forEach.call(document.querySelectorAll('.h-nav a'), function (a) {
-    var busy = false;
-    a.addEventListener('mouseenter', function () {
-      if (busy || reducedMotion) return;
-      busy = true;
-      decode(a, a.textContent, 320, function () { busy = false; });
-    });
-  });
-
-  /* ============================================================
-     Scroll progress hairline + scroll-spy nav
-     ============================================================ */
-  var bar = document.getElementById('progressBar');
-  function onScroll() {
-    var doc = document.documentElement;
-    var max = doc.scrollHeight - window.innerHeight;
-    var p = max > 0 ? Math.min(Math.max(doc.scrollTop / max, 0), 1) : 0;
-    bar.style.transform = 'scaleX(' + p + ')';
-  }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-
-  if ('IntersectionObserver' in window) {
-    var spyLinks = {};
-    Array.prototype.forEach.call(document.querySelectorAll('[data-spy]'), function (a) {
-      spyLinks[a.getAttribute('data-spy')] = a;
-    });
-    var spy = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        var link = spyLinks[e.target.id];
-        if (!link) return;
-        if (e.isIntersecting) {
-          Object.keys(spyLinks).forEach(function (k) { spyLinks[k].classList.remove('active'); });
-          link.classList.add('active');
-        }
-      });
-    }, { rootMargin: '-45% 0px -45% 0px' });
-    ['projects', 'writing'].forEach(function (id) {
-      var s = document.getElementById(id);
-      if (s) spy.observe(s);
-    });
-  }
-
-  /* ============================================================
-     Read / unread memory — clicked items keep a hollow marker and
-     dimmed title across visits (localStorage).
-     ============================================================ */
-  var SEEN_KEY = 'mb_seen_v1';
-  var seen = [];
-  try { seen = JSON.parse(localStorage.getItem(SEEN_KEY) || '[]'); } catch (e) { seen = []; }
-
-  function markSeen(href) {
-    if (seen.indexOf(href) !== -1) return;
-    seen.push(href);
-    try { localStorage.setItem(SEEN_KEY, JSON.stringify(seen)); } catch (e) {}
-  }
-
-  Array.prototype.forEach.call(document.querySelectorAll('.p-item, .w-item'), function (item) {
-    var href = item.getAttribute('href');
-    if (href && seen.indexOf(href) !== -1) item.classList.add('seen');
-    item.addEventListener('click', function () {
-      markSeen(href);
-      item.classList.add('seen');
-    });
-  });
-
-  /* ============================================================
-     Live GitHub stars — one API call, 6h cache, count-up tween.
-     Falls back silently to the baked-in numbers.
-     ============================================================ */
-  var STAR_KEY = 'mb_stars_v1';
-  var STAR_TTL = 6 * 60 * 60 * 1000;
-
-  function fmt(n) { return n.toLocaleString('en-US'); }
-
-  function countUp(el, from, to) {
-    if (reducedMotion || from === to) { el.textContent = '★ ' + fmt(to); return; }
-    var start = null, dur = 650;
-    function frame(now) {
-      if (start === null) start = now;
-      var p = Math.min((now - start) / dur, 1);
-      var eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = '★ ' + fmt(Math.round(from + (to - from) * eased));
-      if (p < 1) requestAnimationFrame(frame);
-    }
-    requestAnimationFrame(frame);
-  }
-
-  function applyStars(map, animate) {
-    var total = 0;
-    Array.prototype.forEach.call(document.querySelectorAll('[data-repo]'), function (item) {
-      var el = item.querySelector('.p-stars');
-      if (!el) return;
-      var name = item.getAttribute('data-repo');
-      var fresh = map[name];
-      var current = parseInt(el.getAttribute('data-stars'), 10) || 0;
-      var val = (typeof fresh === 'number') ? fresh : current;
-      total += val;
-      if (typeof fresh === 'number' && fresh !== current) {
-        el.setAttribute('data-stars', String(fresh));
-        if (animate) countUp(el, current, fresh);
-        else el.textContent = '★ ' + fmt(fresh);
-      } else {
-        el.textContent = '★ ' + fmt(val);
-      }
-    });
-    // include repos without data-repo (e.g. marketplace-listed VulnHawk) in the total
-    Array.prototype.forEach.call(document.querySelectorAll('.p-stars'), function (el) {
-      if (!el.closest('[data-repo]')) total += parseInt(el.getAttribute('data-stars'), 10) || 0;
-    });
-    var tot = document.getElementById('starTotal');
-    if (tot) tot.textContent = 'Σ ' + fmt(total) + ' ★';
-  }
-
-  // paint totals from baked-in numbers immediately
-  applyStars({}, false);
-
-  function refreshStars() {
-    var cached = null;
-    try { cached = JSON.parse(localStorage.getItem(STAR_KEY) || 'null'); } catch (e) {}
-    if (cached && cached.t && (Date.now() - cached.t) < STAR_TTL && cached.data) {
-      applyStars(cached.data, false);
-      return;
-    }
-    fetch('https://api.github.com/users/momenbasel/repos?per_page=100')
-      .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (repos) {
-        if (!repos || !repos.length) return;
-        var map = {};
-        repos.forEach(function (r) { map[r.name] = r.stargazers_count; });
-        try { localStorage.setItem(STAR_KEY, JSON.stringify({ t: Date.now(), data: map })); } catch (e) {}
-        applyStars(map, true);
-      })
-      .catch(function () { /* keep baked-in numbers */ });
-  }
-  refreshStars();
-
-  /* ============================================================
-     Footer local time
-     ============================================================ */
-  var timeEl = document.getElementById('localTime');
-  function tick() {
-    if (!timeEl) return;
-    var d = new Date();
-    var hh = String(d.getHours()).padStart(2, '0');
-    var mm = String(d.getMinutes()).padStart(2, '0');
-    timeEl.textContent = 'local ' + hh + ':' + mm;
-  }
-  tick();
-  setInterval(tick, 30000);
-
-  /* A note for the people who open devtools on a security site. */
-  if (window.console && console.log) {
-    console.log('%c moamenbasel.com %c view source welcome — nothing here you can\'t read ',
-      'background:#a08555;color:#0d0d0f;padding:2px 6px;',
-      'color:#8f8f96;padding:2px 0;');
-  }
+  }, 190);
+  setTimeout(() => { boot.classList.add('done'); }, 2600); // hard fail-safe
 })();
+
+/* ============================================================
+   TEXT SCRAMBLE — hero name decode
+   ============================================================ */
+function scrambleName() {
+  const el = document.getElementById('scramble');
+  const chars = '!@#$%^&*<>/\\|{}[]=~-+';
+  const target = 'MOAMEN BASEL';
+  let frame = 0;
+  const total = 34;
+  const iv = setInterval(() => {
+    let out = '';
+    for (let i = 0; i < target.length; i++) {
+      const reveal = (frame / total) * target.length + (i < 6 ? 0 : -3);
+      if (target[i] === ' ') { out += ' '; continue; }
+      out += i < reveal ? target[i] : chars[Math.floor(Math.random() * chars.length)];
+    }
+    // split-color: second word in green once resolved
+    if (frame >= total) {
+      el.innerHTML = 'MOAMEN <span class="alt">BASEL</span>';
+      clearInterval(iv);
+    } else {
+      el.textContent = out;
+    }
+    frame++;
+  }, 42);
+}
+
+/* ============================================================
+   ROTATING ASTERISK CURSOR
+   ============================================================ */
+(function () {
+  const ast = document.getElementById('asterisk');
+  let x = -50, y = -50, cx = -50, cy = -50;
+  addEventListener('pointermove', e => {
+    x = e.clientX; y = e.clientY;
+    ast.style.opacity = '1';
+  }, { passive: true });
+  (function follow() {
+    cx += (x - cx) * 0.18;
+    cy += (y - cy) * 0.18;
+    ast.style.transform = `translate(${cx - 11}px, ${cy - 11}px)`;
+    requestAnimationFrame(follow);
+  })();
+})();
+
+/* ============================================================
+   PROJECT ARCHIVE — dense index rows
+   ============================================================ */
+const projects = [
+  { name: 'PureMac',       lang: 'swift',      stars: 5206, url: 'https://github.com/momenbasel/PureMac',                            desc: 'Open-source macOS cleaner. Native SwiftUI, zero telemetry. The CleanMyMac alternative that respects your privacy.' },
+  { name: 'keyFinder',     lang: 'javascript', stars: 692,  url: 'https://momenbasel.github.io/keyFinder/',                          desc: 'Chrome extension that passively scans every page for leaked API keys, tokens, and secrets. 80+ patterns, zero config.' },
+  { name: 'Phosphor',      lang: 'swift',      stars: 435,  url: 'https://github.com/momenbasel/Phosphor',                           desc: 'Free, open-source iOS device manager for macOS. Browse backups, export messages, extract photos — no iCloud lock-in.' },
+  { name: 'htb-writeups',  lang: 'html',       stars: 160,  url: 'https://momenbasel.github.io/htb-writeups/',                       desc: 'Hack The Box writeup collection. Walkthroughs for retired machines and challenges.' },
+  { name: 'ConsoleMini',   lang: 'typescript', stars: 70,   url: 'https://github.com/momenbasel/ConsoleMini',                        desc: 'Turn a Mac mini into a living-room retro/PS console. Big-picture launcher built with Electron and React.' },
+  { name: 'VulnHawk',      lang: 'python',     stars: 62,   url: 'https://github.com/marketplace/actions/vulnhawk-security-scan',    desc: 'AI-powered SAST scanner. Finds auth bypass, IDOR, and logic bugs that Semgrep and CodeQL miss.' },
+  { name: 'AutoWIFI',      lang: 'python',     stars: 53,   url: 'https://momenbasel.github.io/AutoWIFI/',                           desc: 'Wireless pentesting framework. Full WPA/WPA2/WEP/WPS attack chain from recon to cracking in one command.' },
+  { name: 'malware-check', lang: 'python',     stars: 46,   url: 'https://github.com/momenbasel/malware-check',                      desc: 'Static and dynamic analysis tool that detects malicious code, suspicious binaries, and privacy violations.' },
+  { name: 'subScreen',     lang: 'javascript', stars: 16,   url: 'https://github.com/momenbasel/subScreen',                          desc: 'Bulk screenshot tool for web hosts. Point it at a list of subdomains and get visual recon fast.' },
+  { name: 'FastRecvSMS',   lang: 'python',     stars: 15,   url: 'https://momenbasel.github.io/FastRecvSMS/',                        desc: 'SMS verification CLI. Buy temporary numbers and receive OTP codes across 170+ countries.' }
+];
+const maxStars = Math.max(...projects.map(p => p.stars));
+const wrap = document.getElementById('project-rows');
+wrap.innerHTML = projects.map((p, i) => `
+  <a class="row" href="${p.url}" target="_blank" rel="noopener" data-repo="${p.name}">
+    <span class="idx">#${String(i + 1).padStart(2, '0')}</span>
+    <span class="name">${p.name}</span>
+    <span class="meta"><span class="bar"><i style="width:${Math.max(4, (p.stars / maxStars) * 100)}%"></i></span><span class="stars" data-stars="${p.stars}">★ ${p.stars.toLocaleString()}</span> · ${p.lang}</span>
+    <span class="desc"><span class="desc-inner">
+      <span class="arrow">→</span>
+      <span class="marq ${p.desc.length > 64 ? 'long' : ''}"><span>${p.desc}${p.desc.length > 64 ? '&nbsp;&nbsp;&nbsp;' + p.desc : ''}</span></span>
+    </span></span>
+  </a>`).join('');
+
+/* ============================================================
+   LIVE GITHUB STARS — one API call, 6h cache. Falls back
+   silently to the baked-in numbers.
+   ============================================================ */
+(function () {
+  const KEY = 'mb_stars_v2', TTL = 6 * 60 * 60 * 1000;
+  function fmt(n) { return n.toLocaleString('en-US'); }
+  function apply(map) {
+    let total = 0;
+    document.querySelectorAll('#project-rows .row').forEach((row, i) => {
+      const el = row.querySelector('.stars');
+      const name = row.getAttribute('data-repo');
+      const fresh = map[name];
+      const val = (typeof fresh === 'number') ? fresh : (parseInt(el.dataset.stars, 10) || 0);
+      total += val;
+      el.dataset.stars = String(val);
+      el.textContent = '★ ' + fmt(val);
+      const bar = row.querySelector('.bar i');
+      if (bar) bar.style.width = Math.max(4, (val / maxStars) * 100) + '%';
+    });
+    const tail = document.querySelector('#projects .tail');
+    if (tail) tail.textContent = 'Σ ' + fmt(total) + ' ★ across the archive';
+  }
+  let cached = null;
+  try { cached = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) {}
+  if (cached && cached.t && (Date.now() - cached.t) < TTL && cached.data) { apply(cached.data); return; }
+  fetch('https://api.github.com/users/momenbasel/repos?per_page=100')
+    .then(r => r.ok ? r.json() : null)
+    .then(repos => {
+      if (!repos || !repos.length) return;
+      const map = {};
+      repos.forEach(r => { map[r.name] = r.stargazers_count; });
+      try { localStorage.setItem(KEY, JSON.stringify({ t: Date.now(), data: map })); } catch (e) {}
+      apply(map);
+    })
+    .catch(() => {});
+})();
+
+if (SNAP) {
+  const to = new URLSearchParams(location.search).get('to');
+  if (to) setTimeout(() => document.getElementById(to)?.scrollIntoView(), 300);
+}
 </script>
 </body>
 </html>
